@@ -1,0 +1,77 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Ruda', sans-serif;
+    font-size: 14px;
+    color: #fff; 
+}
+
+.nav-item.active {
+    background-color: blue;
+    color: white; 
+    border-radius: 15px;
+  }
+  .nav-item.active a {
+    color: #fff; 
+  }
+
+  .nav-tabs, .nav-link.active{
+    border: none;
+  }
+
+  .nav-link{
+    color: white !important;
+  }
+
+  .nav-link.active{
+    border-bottom: 4px solid blue !important;
+    color: blue !important;
+    background-color: #202529 !important;
+  }
+
+  .card {
+    background-color: #363a3d;
+    color: #fff;
+    border-radius: 15px;
+    padding: 15px;
+  }
+
+  .image-and-heading {
+    display: flex;
+    align-items: center;
+  }
+  
+  .image-and-heading img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  #Crprice_change_percentage_24h{
+    border: 2px solid green;
+    border-radius: 50%;
+    width: 90px;
+    padding: 5px;
+    text-align: center;
+  }
+  
+  #Crcurrent_price{
+    margin-top: 15px;
+    color: green;
+    font-weight: bold;
+  }
+  
+  #total_volume span{
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 13px;
+  }
+
+  #market_cap span{
+    font-weight: bold;
+    font-size: 13px;
+  }

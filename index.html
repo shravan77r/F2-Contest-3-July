@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoTracker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ruda&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <a class="navbar-brand ms-5" href="#">
+            <h5>CryptoTracker</h5>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <ul class="navbar-nav" style="display: contents;">
+                <li class="nav-item">
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#compare">Compare</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#catchlist">Watchlist</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" aria-current="page" href="#dashboard">Dashboard</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="py-5 bg-dark" id="about">
+        <div class="container">
+            <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="grid-tab" data-toggle="tab" href="#gridView" role="tab" aria-controls="grid" aria-selected="true">Grid</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="list-tab" data-toggle="tab" href="#listView" role="tab" aria-controls="list" aria-selected="false">List</a>
+                </li>
+              </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="gridView" role="tabpanel" aria-labelledby="grid-tab">
+                    <div class="row mt-4" id="grid-view">
+                        <!-- <div class="col-md-3">
+                            <div class="card">
+                                <div class="image-and-heading">
+                                    <img id="Crimage"
+                                        src="https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579"
+                                        alt="img">
+                                    <h3 id="CrId">btc</h3>
+                                </div>
+                                <p id="CrName">Bitcoin</p>
+                                <span id="Crprice_change_percentage_24h">0.97%</span>
+                                <span id="Crcurrent_price">149.61</span>
+                                <span id="total_volume"><span>Total Volume:</span> 4392680050</span>
+                                <span id="market_cap"><span>Market Cap:</span> 226375955420</span>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="listView" role="tabpanel" aria-labelledby="list-tab">
+                    <div class="row mt-4" id="list-view">
+                        <div class="container mt-4">
+                            <table class="table table-borderless table-dark">                              
+                              <tbody id="tbody">
+                                
+                              </tbody>
+                            </table>
+                          </div>
+                          
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
